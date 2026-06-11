@@ -230,11 +230,21 @@
 </script>  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
 <!-- NAV -->
-<nav>
+<nav data-section="navbar">
   <a href="#" class="nav-logo">
-    <div class="logo-badge"><span>3.0</span></div>
+    <div class="logo-badge" style="width:52px; height:52px; background: var(--surface-2); border-radius: 6px; border: 2px solid var(--accent); box-shadow: 0 0 12px rgba(196,151,58,0.2); display: flex; align-items: center; justify-content: center; position: relative; flex-shrink: 0;">
+  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 0; top: 0;">
+    <defs>
+      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
+        <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="#C4973A" flood-opacity="0.4"/>
+      </filter>
+    </defs>
+    <polygon points="18,1 33,10 33,26 18,35 3,26 3,10" stroke="var(--accent)" stroke-width="2" fill="none" filter="url(#glow)"/>
+    <line x1="5" y1="31" x2="31" y2="5" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" />
+  </svg>
+  <span style="font-family: var(--font-d); font-weight: 800; color: var(--accent); font-size: 0.92rem; letter-spacing: -0.02em; position: relative; z-index: 1;">3.0</span>
+</div>
     <div class="logo-text">
       <span class="logo-name">Driepunt<span>0</span></span>
       <span class="logo-tag">Voorbij 2.0 · Noord NL</span>
@@ -248,8 +258,7 @@
   </ul>
 </nav>
 
-<!-- HERO -->
-<section class="hero">
+<!-- HERO --><section class="hero" data-section="hero">
   <div class="hero-left">
     <div class="version-tag">
       <span class="version-dot"></span>
@@ -262,313 +271,6 @@
         <a href="#contact" class="btn-primary">Plan een gratis kennismaking</a>
         <a href="#aanpak" class="btn-ghost">Bekijk de aanpak</a>
       </div>
-      <span class="cta-subtext">Kop koffie of online — geheel vrijblijvend</span>
+      <span class="cta-subtext">Khip coffie of online — geheel vrijblijvend</span>
     </div>
-  </div>
-  <div class="hero-right fade-up">
-    <div class="release-card">
-      <div class="release-version">v3.0 / 01</div>
-      <div class="release-title">AI is geen experiment meer</div>
-      <div class="release-body">Pilots en hackathons hebben hun werk gedaan. Tijd om het in productie te tillen, met governance en eigenaarschap.</div>
-    </div>
-    <div class="release-card blue">
-      <div class="release-version">v3.0 / 02</div>
-      <div class="release-title">Eén partner, geen ketting van leveranciers</div>
-      <div class="release-body">Strategie, training en bouw onder één dak. Minder regie-overhead, sneller resultaat.</div>
-    </div>
-    <div class="release-card">
-      <div class="release-version">v3.0 / 03</div>
-      <div class="release-title">Resultaat in weken, niet in kwartalen</div>
-      <div class="release-body">Korte cycli, werkende oplossingen, meetbare impact. Geen rapport dat in een la verdwijnt.</div>
-    </div>
-  </div>
-</section>
-
-<div class="hr-accent"></div>
-
-<!-- FASES -->
-<section class="section fases" id="aanpak">
-  <p class="section-label fade-up">Waar sta jij?</p>
-  <h2 class="fade-up">Drie startpunten.<br><em>Eén partner.</em></h2>
-  <p style="color: var(--text-muted); max-width: 54ch;" class="fade-up">We werken vanuit jouw situatie. Herken je jezelf in een van deze fases? Daar beginnen we.</p>
-
-  <div class="fases-grid fade-up">
-    <div class="fase">
-      <div class="fase-num">01 — Verkennen</div>
-      <h3>Net begonnen, of nog niets</h3>
-      <div class="fase-context">Je hoort overal dat je iets met AI moet.</div>
-      <p>Wij brengen rust in de ruis en wijzen de eerste, concrete stap aan. Geen vaag advies, maar een duidelijk beginpunt dat past bij jouw organisatie.</p>
-    </div>
-    <div class="fase">
-      <div class="fase-num">02 — Opschalen</div>
-      <h3>Pilots staan, nu structureel</h3>
-      <div class="fase-context">Van losse experimenten naar serieuze impact.</div>
-      <p>Roadmap, governance en hands-on bouw, zonder onnodige theorie. We maken van wat werkt een fundament dat je organisatie kan dragen.</p>
-    </div>
-    <div class="fase">
-      <div class="fase-num">03 — Versnellen</div>
-      <h3>Eén proces moet sneller</h3>
-      <div class="fase-context">Concreet knelpunt dat tijd of geld kost.</div>
-      <p>Wij bouwen de workflow, agent of integratie die het werk uit handen neemt. Meetbaar resultaat, geen langdurige trajecten.</p>
-    </div>
-  </div>
-</section>
-
-<!-- AANPAK -->
-<section class="section" style="background: var(--bg);">
-  <p class="section-label fade-up">Werkwijze</p>
-  <h2 class="fade-up">Van analyse<br><em>naar actie.</em></h2>
-
-  <div class="aanpak-steps fade-up">
-    <div class="step">
-      <div class="step-num">01</div>
-      <h4>Kennismaking</h4>
-      <p>Een gesprek van 45 minuten. We stellen de juiste vragen voordat we iets aanbevelen. Geen verkooppraatje, geen offerte.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">02</div>
-      <h4>AI-Readiness</h4>
-      <p>Hoe klaar is je team, data en infrastructuur? We testen aannames en stellen prioriteiten vast.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">03</div>
-      <h4>Bouwen & begeleiden</h4>
-      <p>Strategie, software en data werken parallel. Geen handover-momenten tussen disciplines.</p>
-    </div>
-    <div class="step">
-      <div class="step-num">04</div>
-      <h4>Borging</h4>
-      <p>Het systeem moet blijven werken als wij er niet meer zijn. We trainen, documenteren en begeleiden de overdracht.</p>
-    </div>
-  </div>
-</section>
-
-<!-- DIENSTEN -->
-<section class="section" id="diensten" style="background: var(--surface);">
-  <p class="section-label fade-up">Wat we doen</p>
-  <h2 class="fade-up">Alles wat je nodig hebt,<br><em>onder één dak.</em></h2>
-
-  <div class="diensten-grid">
-    <div class="dienst-card fade-up">
-      <div class="dienst-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
-      </div>
-      <h4>Strategie & visie</h4>
-      <p>AI-roadmap op maat. Van eerste verkenning tot uitvoeringsplan dat past bij jouw organisatiecultuur en ambities.</p>
-    </div>
-    <div class="dienst-card fade-up" style="transition-delay:.08s">
-      <div class="dienst-icon">
-        <svg viewBox="0 0 24 24"><path d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
-      </div>
-      <h4>Training & adoptie</h4>
-      <p>AI werkt pas als mensen het gebruiken. We trainen teams, nemen weerstand weg en zorgen dat nieuwe werkwijzen beklijven.</p>
-    </div>
-    <div class="dienst-card fade-up" style="transition-delay:.16s">
-      <div class="dienst-icon">
-        <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
-      </div>
-      <h4>Automation</h4>
-      <p>Repetitief werk automatiseren, workflows verbinden en processen versnellen. Van eenvoudig tot complex, altijd met behoud van controle.</p>
-    </div>
-    <div class="dienst-card fade-up" style="transition-delay:.04s">
-      <div class="dienst-icon">
-        <svg viewBox="0 0 24 24"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
-      </div>
-      <h4>Custom bouw & tooling</h4>
-      <p>Agents, chatbots, dashboards en integraties op maat. Gebouwd op jouw data, passend in jouw systemen.</p>
-    </div>
-    <div class="dienst-card fade-up" style="transition-delay:.12s">
-      <div class="dienst-icon">
-        <svg viewBox="0 0 24 24"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
-      </div>
-      <h4>Data & analytics</h4>
-      <p>Van losse data naar bruikbare inzichten. Dashboards die antwoord geven op de vragen die er echt toe doen.</p>
-    </div>
-    <div class="dienst-card fade-up" style="transition-delay:.2s">
-      <div class="dienst-icon">
-        <svg viewBox="0 0 24 24"><path d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
-      </div>
-      <h4>Doorlopende support</h4>
-      <p>AI-implementaties vragen onderhoud en doorontwikkeling. We blijven beschikbaar als sparringpartner en beheerder.</p>
-    </div>
-  </div>
-</section>
-
-<!-- WAAROM -->
-<section class="section waarom">
-  <p class="section-label fade-up">Waarom Driepunt0</p>
-  <h2 class="fade-up">Geen toverij.<br><em>Wel resultaat.</em></h2>
-
-  <div class="waarom-grid">
-    <div class="waarom-item fade-up">
-      <h4>Noordelijk-nuchter</h4>
-      <p>Geen buzzwords, geen mooie praatjes. We zeggen wat werkt, wat niet, en waarom. Direct en concreet, dat is hoe we zijn.</p>
-    </div>
-    <div class="waarom-item fade-up" style="transition-delay:.08s">
-      <h4>Alles onder één dak</h4>
-      <p>Strategie, training én bouw. Je hoeft geen drie partijen te managen om vooruit te komen. Wij regelen het samen.</p>
-    </div>
-    <div class="waarom-item fade-up" style="transition-delay:.04s">
-      <h4>MKB in onze genen</h4>
-      <p>We snappen dat tijd schaars is en marges reëel. Onze adviezen passen op een ondernemer-ochtend, niet in een 80-pagina rapport.</p>
-    </div>
-    <div class="waarom-item fade-up" style="transition-delay:.12s">
-      <h4>Hands-on, niet alleen advies</h4>
-      <p>We bouwen mee. Werkende oplossingen, geen dikke rapporten die in een la verdwijnen. Resultaat dat je morgen al kunt gebruiken.</p>
-    </div>
-  </div>
-</section>
-
-<!-- TEAM -->
-<section class="section" id="team" style="background: var(--bg);">
-  <p class="section-label fade-up">Het team</p>
-  <h2 class="fade-up">Drie experts.<br><em>Eén release.</em></h2>
-
-  <div class="team-grid">
-    <div class="team-card fade-up">
-      <div class="team-card-top">
-        <div class="team-role">AI-strateeg · Workflow-specialist</div>
-        <h3>Tjimka Bakker</h3>
-      </div>
-      <div class="team-card-body">
-        <p>Verbindt strategie met uitvoering. Richt slimme workflows en AI-agenten in voor sales, klantenservice en marketing. Begeleidt teams in de verandering zodat AI ook daadwerkelijk wordt gebruikt.</p>
-        <div class="team-tags">
-          <span class="tag">AI-strategie</span>
-          <span class="tag">Workflow automation</span>
-          <span class="tag">Change management</span>
-          <span class="tag">Chatbots & agents</span>
-        </div>
-        <a href="https://stroomlijn.nu" target="_blank" class="team-link">stroomlijn.nu ↗</a>
-      </div>
-    </div>
-    <div class="team-card fade-up" style="transition-delay:.1s">
-      <div class="team-card-top">
-        <div class="team-role blauw">Software engineer · AI-architect</div>
-        <h3>Harrie de Groot</h3>
-      </div>
-      <div class="team-card-body">
-        <p>Bouwt robuuste, schaalbare AI-oplossingen met volledige controle over data. 18+ jaar als hands-on architect. Integreert AI naadloos in bestaande systemen, zonder compromissen op veiligheid.</p>
-        <div class="team-tags">
-          <span class="tag">Full-stack</span>
-          <span class="tag">.NET / TypeScript</span>
-          <span class="tag">AI-integratie</span>
-          <span class="tag">MSc. AI</span>
-        </div>
-        <a href="https://harrie.dev" target="_blank" class="team-link">harrie.dev ↗</a>
-      </div>
-    </div>
-    <div class="team-card fade-up" style="transition-delay:.2s">
-      <div class="team-card-top">
-        <div class="team-role blauw">Digital optimizer · CRO-specialist</div>
-        <h3>Robin Telgenhof</h3>
-      </div>
-      <div class="team-card-body">
-        <p>Maakt AI concreet en meetbaar. 18+ jaar in conversie-optimalisatie, marketing automation en data-gedreven besluitvorming. Zorgt dat AI niet alleen slim is, maar ook rendeert voor de organisatie.</p>
-        <div class="team-tags">
-          <span class="tag">CRO</span>
-          <span class="tag">GA4 / Analytics</span>
-          <span class="tag">Automation</span>
-          <span class="tag">ROI-focus</span>
-        </div>
-        <a href="https://robintelgenhof.com" target="_blank" class="team-link">robintelgenhof.com ↗</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section testimonials">
-  <p class="section-label fade-up">Wat anderen zeggen</p>
-  <h2 class="fade-up">MKB'ers die al<br><em>een stap verder zijn.</em></h2>
-
-  <div class="testimonial-grid">
-    <div class="testimonial fade-up">
-      <p class="testimonial-quote">Eindelijk een partij die niet over AI praat alsof het tovenarij is. Binnen drie weken draaide onze eerste automation.</p>
-      <div class="testimonial-source">
-        <strong>Operationeel manager</strong>
-        Productiebedrijf, Drenthe
-      </div>
-    </div>
-    <div class="testimonial fade-up" style="transition-delay:.1s">
-      <p class="testimonial-quote">We wisten niet waar te beginnen. De kennismaking gaf ons heldere prioriteiten en geen overbodig advies.</p>
-      <div class="testimonial-source">
-        <strong>Eigenaar</strong>
-        Adviesbureau, Groningen
-      </div>
-    </div>
-    <div class="testimonial fade-up" style="transition-delay:.2s">
-      <p class="testimonial-quote">Het team is mee. Dat is misschien nog wel waardevoller dan de tools die we nu gebruiken.</p>
-      <div class="testimonial-source">
-        <strong>HR-manager</strong>
-        Zorginstelling, Friesland
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="hr-accent"></div>
-
-<!-- CTA -->
-<section class="cta-section" id="contact">
-  <div>
-    <p class="section-label">Contact</p>
-    <h2>Klaar voor een<br><em>eerlijk gesprek?</em></h2>
-    <p>We stellen de juiste vragen voordat we iets aanbevelen. In een eerste gesprek van 45 minuten kijken we of en hoe we iets voor jouw organisatie kunnen betekenen.</p>
-    <p>Geen verkooppraatje. Geen offerte in het eerste gesprek. Gewoon koffie.</p>
-  </div>
-  <div class="cta-form fade-up">
-    <h3>Gratis kennismaking</h3>
-    <p class="form-sub">Online of bij jou op kantoor. We reageren binnen één werkdag.</p>
-    <div class="form-group">
-      <label for="naam">Naam</label>
-      <input type="text" id="naam" placeholder="Je naam">
-    </div>
-    <div class="form-group">
-      <label for="org">Organisatie</label>
-      <input type="text" id="org" placeholder="Bedrijfsnaam">
-    </div>
-    <div class="form-group">
-      <label for="email">E-mailadres</label>
-      <input type="email" id="email" placeholder="naam@bedrijf.nl">
-    </div>
-    <div class="form-group">
-      <label for="fase">Waar zit je nu?</label>
-      <select id="fase">
-        <option value="">Selecteer...</option>
-        <option>01 — Verkennen (nog niets gedaan met AI)</option>
-        <option>02 — Opschalen (pilots lopen, nu structureel)</option>
-        <option>03 — Versnellen (concreet knelpunt oplossen)</option>
-        <option>Weet ik nog niet</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="vraag">Wat speelt er bij jullie?</label>
-      <textarea id="vraag" placeholder="Beschrijf kort het vraagstuk of de uitdaging..."></textarea>
-    </div>
-    <button class="btn-submit" onclick="handleSubmit()">Kennismaking inplannen</button>
-    <p class="form-privacy">Je gegevens worden alleen gebruikt voor dit gesprek.</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <a href="#" class="nav-logo" style="text-decoration:none;">
-    <div class="logo-badge"><span>3.0</span></div>
-    <div class="logo-text">
-      <span class="logo-name" style="font-size:1rem;">Driepunt<span>0</span></span>
-      <span class="logo-tag">Voorbij 2.0 · Noord NL</span>
-    </div>
-  </a>
-  <ul class="footer-links">
-    <li><a href="https://stroomlijn.nu" target="_blank">stroomlijn.nu</a></li>
-    <li><a href="https://harrie.dev" target="_blank">harrie.dev</a></li>
-    <li><a href="https://robintelgenhof.com" target="_blank">robintelgenhof.com</a></li>
-  </ul>
-  <div class="footer-copy">© 2026 Driepunt0 · Noord-Nederland</div>
-</footer>
-
-
-
-  <script src="script.js"></script>
-</body>
-</html>
+  </div><div class="hero-right fade-up"><!DOCTYPE html>
