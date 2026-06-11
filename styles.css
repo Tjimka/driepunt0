@@ -58,8 +58,8 @@
     }
 
     .logo-badge {
-      width: 40px;
-      height: 40px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       background: var(--surface-2);
       border: 2px solid var(--border-hi);
@@ -71,7 +71,7 @@
 
     .logo-badge span {
       font-family: var(--font-d);
-      font-size: 0.8rem;
+      font-size: 0.92rem;
       font-weight: 800;
       color: var(--accent);
       letter-spacing: -0.02em;
@@ -85,7 +85,7 @@
 
     .logo-name {
       font-family: var(--font-d);
-      font-size: 1.15rem;
+      font-size: 1.35rem;
       font-weight: 800;
       color: var(--text);
       letter-spacing: -0.03em;
@@ -94,11 +94,11 @@
     .logo-name span { color: var(--accent); }
 
     .logo-tag {
-      font-size: 0.6rem;
+      font-size: 0.68rem;
       letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--text-muted);
-      margin-top: 2px;
+      margin-top: 3px;
     }
 
     .nav-links {
@@ -128,7 +128,7 @@
       font-weight: 700 !important;
       text-transform: none !important;
       letter-spacing: 0 !important;
-      font-size: 0.875rem !important;
+      font-size: 0.95rem !important;
       transition: background 0.2s !important;
     }
 
@@ -172,8 +172,8 @@
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      font-size: 0.72rem;
-      letter-spacing: 0.16em;
+      font-size: 0.82rem;
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--accent);
       font-weight: 700;
@@ -287,8 +287,8 @@
     .release-card.dim::before { background: var(--surface-3); }
 
     .release-version {
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--text-dim);
       font-weight: 700;
@@ -304,9 +304,9 @@
     }
 
     .release-body {
-      font-size: 0.82rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
     /* ── ACCENT LINE ── */
@@ -320,12 +320,12 @@
     .section { padding: 6.5rem 5vw; position: relative; }
 
     .section-label {
-      font-size: 0.7rem;
-      letter-spacing: 0.18em;
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
       text-transform: uppercase;
       color: var(--accent);
       font-weight: 700;
-      margin-bottom: 0.85rem;
+      margin-bottom: 1rem;
     }
 
     h2 {
@@ -368,9 +368,9 @@
 
     .fase-num {
       font-family: var(--font-d);
-      font-size: 0.72rem;
+      font-size: 0.82rem;
       font-weight: 800;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.1em;
       color: var(--accent);
       text-transform: uppercase;
       margin-bottom: 0.6rem;
@@ -386,7 +386,7 @@
     }
 
     .fase-context {
-      font-size: 0.78rem;
+      font-size: 0.88rem;
       color: var(--accent);
       font-weight: 600;
       margin-bottom: 0.75rem;
@@ -394,7 +394,7 @@
     }
 
     .fase p {
-      font-size: 0.875rem;
+      font-size: 0.95rem;
       color: var(--text-muted);
       line-height: 1.7;
     }
@@ -438,7 +438,7 @@
     }
 
     .step p {
-      font-size: 0.845rem;
+      font-size: 0.93rem;
       color: var(--text-muted);
       line-height: 1.65;
     }
@@ -491,7 +491,7 @@
     }
 
     .dienst-card p {
-      font-size: 0.845rem;
+      font-size: 0.93rem;
       color: var(--text-muted);
       line-height: 1.65;
     }
@@ -521,7 +521,7 @@
     }
 
     .waarom-item p {
-      font-size: 0.875rem;
+      font-size: 0.95rem;
       color: var(--text-muted);
       line-height: 1.7;
     }
@@ -550,8 +550,8 @@
     }
 
     .team-role {
-      font-size: 0.68rem;
-      letter-spacing: 0.14em;
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--accent);
       font-weight: 700;
@@ -572,7 +572,7 @@
     }
 
     .team-card-body p {
-      font-size: 0.845rem;
+      font-size: 0.93rem;
       color: var(--text-muted);
       line-height: 1.75;
       margin-bottom: 1.1rem;
@@ -585,8 +585,8 @@
     }
 
     .tag {
-      font-size: 0.7rem;
-      padding: 0.2rem 0.55rem;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.65rem;
       border: 1px solid var(--border);
       border-radius: 2px;
       color: var(--text-muted);
@@ -596,7 +596,7 @@
     .team-link {
       display: inline-block;
       margin-top: 1.1rem;
-      font-size: 0.78rem;
+      font-size: 0.85rem;
       color: var(--accent);
       text-decoration: none;
       font-weight: 600;
@@ -623,9 +623,9 @@
     }
 
     .testimonial-quote {
-      font-size: 0.9rem;
+      font-size: 1rem;
       color: var(--text);
-      line-height: 1.75;
+      line-height: 1.8;
       margin-bottom: 1.25rem;
       font-style: normal;
     }
@@ -641,7 +641,7 @@
     }
 
     .testimonial-source {
-      font-size: 0.78rem;
+      font-size: 0.84rem;
       color: var(--text-dim);
       font-weight: 500;
     }
@@ -666,8 +666,8 @@
 
     .cta-section p {
       color: var(--text-muted);
-      font-size: 1rem;
-      line-height: 1.75;
+      font-size: 1.05rem;
+      line-height: 1.8;
       margin-bottom: 1rem;
     }
 
@@ -687,7 +687,7 @@
     }
 
     .form-sub {
-      font-size: 0.83rem;
+      font-size: 0.9rem;
       color: var(--text-muted);
       margin-bottom: 1.75rem;
     }
@@ -745,7 +745,7 @@
     .btn-submit:hover { background: var(--accent-hi); }
 
     .form-privacy {
-      font-size: 0.72rem;
+      font-size: 0.8rem;
       color: var(--text-dim);
       text-align: center;
       margin-top: 0.75rem;
@@ -769,7 +769,7 @@
     }
 
     .footer-links a {
-      font-size: 0.78rem;
+      font-size: 0.85rem;
       color: var(--text-muted);
       text-decoration: none;
       transition: color 0.2s;
@@ -778,7 +778,7 @@
     .footer-links a:hover { color: var(--text); }
 
     .footer-copy {
-      font-size: 0.75rem;
+      font-size: 0.82rem;
       color: var(--text-dim);
     }
 
