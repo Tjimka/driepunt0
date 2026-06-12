@@ -230,24 +230,39 @@
 </script>  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <!-- NAV -->
-<nav data-section="navbar">
+<nav>
   <a href="#" class="nav-logo">
-    <div class="logo-badge" style="width:52px; height:52px; background: var(--surface-2); border-radius: 6px; border: 2px solid var(--accent); box-shadow: 0 0 12px rgba(196,151,58,0.2); display: flex; align-items: center; justify-content: center; position: relative; flex-shrink: 0;">
-  <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 0; top: 0;">
-    <defs>
-      <filter id="glow" x="-20%" y="-20%" width="140%" height="140%" color-interpolation-filters="sRGB">
-        <feDropShadow dx="0" dy="0" stdDeviation="1" flood-color="#C4973A" flood-opacity="0.4"/>
-      </filter>
-    </defs>
-    <polygon points="18,1 33,10 33,26 18,35 3,26 3,10" stroke="var(--accent)" stroke-width="2" fill="none" filter="url(#glow)"/>
-    <line x1="5" y1="31" x2="31" y2="5" stroke="var(--accent)" stroke-width="1" stroke-linecap="round" />
-  </svg>
-  <span style="font-family: var(--font-d); font-weight: 800; color: var(--accent); font-size: 0.92rem; letter-spacing: -0.02em; position: relative; z-index: 1;">3.0</span>
-</div>
+    <div class="logo-badge">
+      <svg viewBox="0 0 52 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <filter id="glow-logo" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+            <feDropShadow dx="0" dy="0" stdDeviation="2" flood-color="#C4973A" flood-opacity="0.45"/>
+          </filter>
+          <filter id="glow-soft" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+            <feDropShadow dx="0" dy="0" stdDeviation="3.5" flood-color="#C4973A" flood-opacity="0.25"/>
+          </filter>
+        </defs>
+        <polygon points="26,3 46,14.5 46,37.5 26,49 6,37.5 6,14.5"
+          stroke="#C4973A" stroke-width="0.75" fill="none" opacity="0.25"/>
+        <polygon points="26,9 41,17.5 41,34.5 26,43 11,34.5 11,17.5"
+          stroke="#C4973A" stroke-width="1.25" fill="none"
+          filter="url(#glow-logo)" opacity="0.75"/>
+        <polygon points="26,9 41,17.5 41,34.5 26,43 11,34.5 11,17.5"
+          fill="rgba(196,151,58,0.04)"/>
+        <line x1="11" y1="26" x2="41" y2="26"
+          stroke="#C4973A" stroke-width="0.6" opacity="0.22"/>
+        <line x1="13" y1="40" x2="39" y2="12"
+          stroke="#C4973A" stroke-width="0.6" stroke-linecap="round" opacity="0.18"/>
+        <circle cx="26" cy="26" r="2.2"
+          fill="#C4973A" filter="url(#glow-soft)" opacity="0.55"/>
+      </svg>
+      <span class="logo-badge-text">3.0</span>
+    </div>
     <div class="logo-text">
       <span class="logo-name">Driepunt<span>0</span></span>
-      <span class="logo-tag">Voorbij 2.0 · Noord NL</span>
+      <span class="logo-tag">Voorbij 2.0 &middot; Noord NL</span>
     </div>
   </a>
   <ul class="nav-links">
@@ -258,19 +273,154 @@
   </ul>
 </nav>
 
-<!-- HERO --><section class="hero" data-section="hero">
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-glow"></div>
   <div class="hero-left">
     <div class="version-tag">
       <span class="version-dot"></span>
-      AI-partner uit het Noorden · v3.0
+      AI-partner uit het Noorden &middot; v3.0
     </div>
     <h1>Voorbij 2.0.<br><em>Welkom bij Driepunt0.</em></h1>
-    <p class="hero-sub">Iedereen plakt 2.0 op elke update. Wij gaan meteen door. Niet weer een experiment, maar AI als infrastructuur voor het MKB. Strategie, training, automation en bouw onder één dak.</p>
+    <p class="hero-sub">Iedereen plakt 2.0 op elke update. Wij gaan meteen door. Niet weer een experiment, maar AI als infrastructuur voor het MKB. Strategie, training, automation en bouw onder &eacute;&eacute;n dak.</p>
     <div class="hero-actions">
       <div class="hero-cta-row">
         <a href="#contact" class="btn-primary">Plan een gratis kennismaking</a>
         <a href="#aanpak" class="btn-ghost">Bekijk de aanpak</a>
       </div>
-      <span class="cta-subtext">Khip coffie of online — geheel vrijblijvend</span>
+      <span class="cta-subtext">Kop koffie of online &mdash; geheel vrijblijvend</span>
     </div>
-  </div><div class="hero-right fade-up"><!DOCTYPE html>
+    <div class="hero-releases fade-up">
+      <div class="release-card">
+        <div class="release-version">v3.0 / 01</div>
+        <div class="release-title">AI is geen experiment meer</div>
+        <div class="release-body">Pilots en hackathons hebben hun werk gedaan. Tijd om het in productie te tillen, met governance en eigenaarschap.</div>
+      </div>
+      <div class="release-card blue">
+        <div class="release-version">v3.0 / 02</div>
+        <div class="release-title">&Eacute;&eacute;n partner, geen ketting van leveranciers</div>
+        <div class="release-body">Strategie, training en bouw onder &eacute;&eacute;n dak. Minder regie-overhead, sneller resultaat.</div>
+      </div>
+      <div class="release-card dim">
+        <div class="release-version">v3.0 / 03</div>
+        <div class="release-title">Resultaat in weken, niet in kwartalen</div>
+        <div class="release-body">Korte cycli, werkende oplossingen, meetbare impact. Geen rapport dat in een la verdwijnt.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="hr-accent"></div>
+
+<!-- FASES -->
+<section class="section fases" id="aanpak">
+  <div class="section-label">WAAR STA JIJ?</div>
+  <h2>Drie startpunten.<br><em>E&eacute;n partner.</em></h2>
+  <p style="max-width:56ch; color:var(--text-muted); font-size:1.05rem; line-height:1.75;">We werken vanuit jouw situatie. Herken je jezelf in een van deze fases? Daar beginnen we.</p>
+  <div class="fases-grid fade-up">
+    <div class="fase">
+      <div class="fase-num">01 &mdash; Verkennen</div>
+      <h3>Net begonnen, of nog niets</h3>
+      <div class="fase-context">Je hoort overal dat je iets met AI moet.</div>
+      <p>Wij brengen rust in de ruis en wijzen de eerste, concrete stap aan. Geen vaag advies, maar een duidelijk beginpunt dat past bij jouw organisatie.</p>
+    </div>
+    <div class="fase">
+      <div class="fase-num">02 &mdash; Opschalen</div>
+      <h3>Pilots staan, nu structureel</h3>
+      <div class="fase-context">Van losse experimenten naar serieuze impact.</div>
+      <p>Roadmap, governance en hands-on bouw, zonder onnodige theorie. We maken van wat werkt een fundament dat je organisatie kan dragen.</p>
+    </div>
+    <div class="fase">
+      <div class="fase-num">03 &mdash; Versnellen</div>
+      <h3>&Eacute;&eacute;n proces moet sneller</h3>
+      <div class="fase-context">Concreet knelpunt dat tijd of geld kost.</div>
+      <p>Wij bouwen de workflow, agent of integratie die het werk uit handen neemt. Meetbaar resultaat, geen langdurige trajecten.</p>
+    </div>
+  </div>
+</section>
+
+<!-- AANPAK -->
+<section class="section" style="background:var(--bg);">
+  <div class="section-label">Werkwijze</div>
+  <h2>Van analyse<br><em>naar actie.</em></h2>
+  <div class="aanpak-steps fade-up">
+    <div class="step">
+      <div class="step-num">01</div>
+      <h4>Kennismaking</h4>
+      <p>Een gesprek van 45 minuten. We stellen de juiste vragen voordat we iets aanbevelen. Geen verkooppraatje, geen offerte.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">02</div>
+      <h4>AI-Readiness</h4>
+      <p>Hoe klaar is je team, data en infrastructuur? We testen aannames en stellen prioriteiten vast.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">03</div>
+      <h4>Bouwen &amp; begeleiden</h4>
+      <p>Strategie, software en data werken parallel. Geen handover-momenten tussen disciplines.</p>
+    </div>
+    <div class="step">
+      <div class="step-num">04</div>
+      <h4>Borging</h4>
+      <p>Het systeem moet blijven werken als wij er niet meer zijn. We trainen, documenteren en begeleiden de overdracht.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DIENSTEN  -->
+<section class="section" id="diensten" style="background:var(--surface);">
+  <div class="section-label">Wat we doen</div>
+  <h2>Alles wat je nodig hebt,<br><em>onder &eacute;&eacute;n dak.</em></h2>
+  <div class="diensten-grid fade-up">
+    <div class="dienst-card">
+      <div class="dienst-icon">
+        <svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      </div>
+      <h4>Strategie &amp; visie</h4>
+      <p>AI-roadmap op maat. Van eerste verkenning tot uitvoeringsplan dat past bij jouw organisatiecultuur en ambities.</p>
+    </div>
+    <div class="dienst-card">
+      <div class="dienst-icon">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+      </div>
+      <h4>Training &amp; adoptie</h4>
+      <p>AI werkt pas als mensen het gebruiken. We trainen teams, nemen weerstand weg en zorgen dat nieuwe werkwijzen beklijven.</p>
+    </div>
+    <div class="dienst-card">
+      <div class="dienst-icon">
+        <svg viewBox="0 0 24 24"><path d="M13 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V9z"/><polyline points="13 2 13 9 20 9"/></svg>
+      </div>
+      <h4>Automation</h4>
+      <p>Repetitief werk automatiseren, workflows verbinden en processen versnellen. Van eenvoudig tot complex, altijd met behoud van controle.</p>
+    </div>
+    <div class="dienst-card">
+      <div class="dienst-icon">
+        <svg viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx2"/><path d="M8 21h8M12 17v4"/></svg>
+      </div>
+      <h4>Custom bouw &amp; tooling</h4>
+      <p>Agents, chatbots, dashboards en integraties op maat. Gebouwd op jouw data, passend in jouw systemen.</p>
+    </div>
+    <div class="dienst-card">
+      <div class="dienst-icon">
+        <svg viewBox="0 0 24 24"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+      </div>
+      <h4>Data &amp; analytics</h4>
+      <p>Van losse data naar bruikbare inzi#
+[��\���\��YH[���ܙ�]�[��H��Y�[�YH\�X��H�[������]���]��\��H�Y[��X�\����]��\��H�Y[��ZX�ۈ���ݙ��Y]Л�H�����]H�L�HMXL��KL���M�XL��L�L�ML��L����Ϗ�ݙς��]�����ܛ�[�H�\ܝ����RKZ[\[Y[�]Y\���Y�[�ۙ\��Y[��ܛ۝�Z��[[�ˈ�H�Z��[��\��ZؘX\�[��\��[��\��\�[��ZY\�\������]����]�����X�[ۏ���KKH�PT��HKO���X�[ۈ�\��H��X�[ۈ�X\��H���]��\��H��X�[ۋ[X�[���PT��H�QTS��]������Y[���\���\ˊ����[O��[�\�[X]��[O�����]��\��H��X\��KYܚY�YK]\���]��\��H��X\��KZ][H������ܙ[Z��[�X�\������Y[��^���ܙ��Y[�[��YH�X]�\ˈ�H�Y��[��]�\���]�Y][��X\��K�\�X�[��ۘܙY]]\��H�H���������]���]��\��H��X\��KZ][H����[\�ۙ\�	�XX�]NəXX�]NۈZ�������]Y�YK�Z[�[��	�XX�]Nۈ��]ˈ�H�Y��Y[��YH\�Z�[�HX[�Y�[��H��ܝZ]H��Y[���Z�[��[�[�]�[Y[������]���]��\��H��X\��KZ][H����RЈ[�۞�H�[�\������H�\��[��[�Z]��]��]X]YK�\��[��H�^�[�[�Y[��[�^�H�\�\��X\��Y�[��[��K�����]���]��\��H��X\��KZ][H����[��[ۋ�Y][Y[�Y�Y\������H��]�[�YYK��\��[�H����[��[��Y[�Z��H�\ܝ[�YH[�Y[�H�\��Z��[���\�[X]]�H[ܙ�[�[�[��X��ZZ�[������]����]�����X�[ۏ���KKHPSHKO���X�[ۈ�\��H��X�[ۈ�YH�X[H��[OH��X��ܛ�[���\�KX��Nȏ��]��\��H��X�[ۋ[X�[��UPSO�]������YH^\�ˏ���[O�I�XX�]Nۈ�[X\�K��[O�����]��\��H�X[KYܚY�YK]\����KKH�[\LHKO��]��\��H�X[KX�\����]��\��H�X[K\��]ܘ\���[Y�ܘ�H�΋������[Z����K��[Z�KX�Z��\���Ȉ[H��[Z�H�Z��\��ۙ\��܏H�\˜�[K�\�^OIۛۙI��\˜\�[�[[Y[��]Y\�T�[X�܊	˝X[K\��\X�Z�\��K��[K�\�^OIٛ^	�ȏ��]��\��H�X[K\��\X�Z�\���[OH�\�^N��ۙNȏ���[��\��H�X[K\��Z[�]X[ȏ����[����]����]���]��\��H�X[KX�\�]����]��\��H�X[K\��H��RK\��]YY�	�ZY���ܚٛ��\�X�X[\��]���ϕ�[Z�H�Z��\��ς��]���]��\��H�X[KX�\�X��H�����\��[���]Y�YHY]Z]��\�[�ˈ�X��[[YH�ܚٛ���[�RKXY�[�[�[���܈�[\��[�[��\��X�H[�X\��][�ˈ�Y�[ZYX[\�[�H�\�[�\�[����]RH���XY�\��[Z���ܙ�X��ZZ�����]��\��H�X[K]Y�ȏ���[��\��H�Yȏ�RK\��]Y�YO��[����[��\��H�Yȏ��ܚٛ��]]�X][ۏ��[����[��\��H�Yȏ��[��HX[�Y�[Y[���[����[��\��H�Yȏ��]���	�[\�Y�[����[����]���H�Y�H�΋������[Z����H��\��H�X[K[[�Ȉ\��]H�؛[�Ȉ�[H����[�\�������[Z����H	��NNN��O���]����]����KKH\��YHKO��]��\��H�X[KX�\����]��\��H�X[K\��]ܘ\���[Y�ܘ�H�΋��\��YK�]��\��YKYKYܛ����Ȉ[H�\��YHHܛ���ۙ\��܏H�\˜�[K�\�^OIۛۙI��\˜\�[�[[Y[��]Y\�T�[X�܊	˝X[K\��\X�Z�\��K��[K�\�^OIٛ^	�ȏ��]��\��H�X[K\��\X�Z�\���[OH�\�^N��ۙNȏ���[��\��H�X[K\��Z[�]X[ȏ����[����]����]���]��\��H�X[KX�\�]����]��\��H�X[K\��H�]]ȏ��ٝ�\�H[��[�Y\�	�ZY��RKX\��]X��]���ϒ\��YHHܛ���ς��]���]��\��H�X[KX�\�X��H������]��؝]\�K��X[�\�HRK[����[��[�Y]��YY�H�۝��Hݙ\�]K�N
+��X\�[��[ۈ\��]X��[�YܙY\�RH�XY���[��\�X[�H�\�[Y[��ۙ\���\��Z\��[���Z[Y�ZY����]��\��H�X[K]Y�ȏ���[��\��H�Yȏ��[\�X����U�\T�ܚ\��[����[��\��H�Yȏ�RKZ[�Yܘ]YO��[����[��\��H�Yȏ�T�ˈRO��[����]���H�Y�H�΋��\��YK�]���\��H�X[K[[�Ȉ\��]H�؛[�Ȉ�[H����[�\���\��YK�]�	��NNN��O���]����]����KKH�ؚ[�KO��]��\��H�X[KX�\����]��\��H�X[K\��]ܘ\���[Y�ܘ�H�΋�ܛؚ[�[�[�ً���Kܛؚ[�][�[�ً��Ȉ[H��ؚ[�[�[�و�ۙ\��܏H�\˜�[K�\�^OIۛۙI��\˜\�[�[[Y[��]Y\�T�[X�܊	˝X[K\��\X�Z�\��K��[K�\�^OIٛ^	�ȏ��]��\��H�X[K\��\X�Z�\���[OH�\�^N��ۙNȏ���[��\��H�X[K\��Z[�]X[ȏ����[����]����]���]��\��H�X[KX�\�]����]��\��H�X[K\��H��[OH���܎��\�K]^[]]Y
+Nȏ�Y�][�[Z^�\�	�ZY��ԓ�\�X�X[\��]���ϔ�ؚ[�[�[�ُ�ς��]���]��\��H�X[KX�\�X��H����XXZ�RH�ۘܙY][�YY]�X\��N
+��X\�[��۝�\��YK[�[X[\�]YKX\��][��]]�X][ۈ[�]KY�Y�]�[��\�Z]�ܛZ[�ˈ�ܙ�]RH�Y][Y[��[H\�XX\�����[�Y\���܈Hܙ�[�\�]YK����]��\��H�X[K]Y�ȏ���[��\��H�Yȏ�ԓ���[����[��\��H�Yȏ��M�[�[]X����[����[��\��H�Yȏ�]]�X][ۏ��[����[��\��H�Yȏ���KY���\���[����]���H�Y�H�΋�ܛؚ[�[�[�ً���H��\��H�X[K[[�Ȉ\��]H�؛[�Ȉ�[H����[�\����ؚ[�[�[�ً���H	��NNN��O���]����]�����]�����X�[ۏ���KKHT�SSӒPS�KO���X�[ۈ�\��H��X�[ۈ\�[[ۚX[ȏ��]��\��H��X�[ۋ[X�[���US�T�S��Q��S��]�����RЉ�\��YH[���[O�Y[��\�\�\�������[O�����]��\��H�\�[[ۚX[YܚY�YK]\���]��\��H�\�[[ۚX[���]��\��H�\�[[ۚX[\][�H��Z[�[Z��Y[�\�Z�YH�Y]ݙ\�RH�X][�و]ݙ[�\�Z�\ˈ�[��[��YH�Z�[��XZYH۞�HY\��H]]�X][ۋ��]���]��\��H�\�[[ۚX[\��\��H�����ۙϓ�\�][ۙY[X[�Y�\����ۙς���X�YX�Y�Z���[�B��]����]���]��\��H�\�[[ۚX[���]��\��H�\�[[ۚX[\][�H���H�\�[��Y]�X\�H�Y�[��[��H�[��\�XZ�[���Y�ۜ�[\�H�[ܚ]Z][�	�[��Y[�ݙ\���Y�Y�Y\ˏ�]���]��\��H�\�[[ۚX[\��\��H�����ۙϑZY�[�X\����ۙς�Y�Y\؝\�X]Kܛۚ[��[���]����]���]��\��H�\�[[ۚX[���]��\��H�\�[[ۚX[\][�H��]X[H\�YYK�]\�Z\���Y[�����[�X\�]��\�[�H���YH�H�H�X��ZZ�[���]���]��\��H�\�[[ۚX[\��\��H�����ۙϒ�[X[�Y�\����ۙς��ܙ�[��[[����Y\�[���]����]����]�����X�[ۏ���KKH�ӕP�KO���X�[ۈ�\��H��K\�X�[ۈ�YH��۝X����]���]��\��H��X�[ۋ[X�[���ӕP�eY�������X\���܈Y[����[O�Y\�Z���\��Z���[O�������H�\��[��[�Z]��]��]X]YK�\��[��H�^�[�[�Y[��[�^�H�\�\��X\��Y�[��[��K������Y[��\�����X]�K��Y[�ٙ�\�H[�]Y\��H�\��Zˈ�]��ۈ�ٙ�YK�����]���]��\��H��KY�ܛH�YK]\���ϑܘ]\��[��\�XZ�[���ς�]��\��H��ܛK\�X���ۛ[�Hو�Z���H��[��܋��H�XY�\�[��[��[�	�XX�]NəXX�]Nۈ�\��Yˏ�]���]��\��H��ܛKYܛ�\���X�[�܏H��X[H���X[O�X�[��[�]\OH�^�YH��X[H��[YOH��X[H�X�Z�\�H�����]���]��\��H��ܛKYܛ�\���X�[�܏H�ܙȏ�ܙ�[�\�]YO�X�[��[�]\OH�^�YH�ܙȈ�[YOH�ܙ�[�\�]YH�X�Z�\�H�����]���]��\��H��ܛKYܛ�\���X�[�܏H�[XZ[��K[XZ[Y�\��X�[��[�]\OH�[XZ[�YH�[XZ[��[YOH�[XZ[�X�Z�\�H�����]���]��\��H��ܛKYܛ�\���X�[�܏H��\�H���Z����H�O��X�[���[X�YH��\�H��[YOH��\�H����[ۈ�[YOH����[X�Y\������[ۏ���[ۏ�H	�Y\���\��[��[�
+����Y]��YX[�Y]RJO��[ۏ���[ۏ��	�Y\�����[[�
+[���[��H��X�\�Y[
+O��[ۏ���[ۏ��	�Y\���\�ۙ[[�
+�ۘܙY]ۙ[[�����[�O��[ۏ���[ۏ��Y]Z�����Y]��[ۏ����[X����]���]��\��H��ܛKYܛ�\���X�[�܏H���XYȏ��]�Y[\��Z��[YO��X�[��^\�XHYH���XYȈ�[YOH���XYȈ����H�ȏ��^\�XO���]����]ۈ\OH��]ۈ��\��H���\�X�Z]���[��\�XZ�[��[�[��[�؝]ۏ��]��\��H��ܛK\�]�X�H���H�Y�]�[���ܙ[�[Y[��X��ZZ���܈]�\��Zˏ�]����]�����X�[ۏ���KKH���T�KO�����\���H�Y�H�Ȉ�\��H��]�[��ȏ��]��\��H����X�Y�H���ݙ��Y]Л�H�L�L���[H��ۙH�[��H������˝�˛ܙ�̌�ݙȈ\�XKZY[�H��YH���Y�ς��[\�YH����Y���\��H�M	H�OH�M	H��YH�N	H�ZY�H�N	H���܋Z[�\��][ۋY�[\��H�ԑЈ����Q���Y��H��OH���]�X][ۏH������X��܏H���M��H����[�X�]OH���H�ς�ٚ[\����Y�ς��Y�ۈ�[��H�����M�H��ˍH��H��ˍH�M�H������OH���M��H�����K]�YH���H��[H��ۙH��X�]OH���H�ς��Y�ۈ�[��H���HKMˍHK��H���LK��HLKMˍH������OH���M��H�����K]�YH�K��H��[H��ۙH���[\�H�\�
+����Y���\�H��X�]OH���H�ς��Y�ۈ�[��H���HKMˍHK��H���LK��HLKMˍH���[H��ؘJNM�MLKN�
+H�ς�[�HOH�LH�LOH�����H�H�L�H���������OH���M��H�����K]�YH�����X�]OH�����ς�[�HOH�LȈLOH���H��H�L�H�L�������OH���M��H�����K]�YH��������K[[�X�\H���[���X�]OH��N�ς��\��H�H�����OH�����H�������[H���M��H��X�]OH��MH�ς��ݙς��[��\��H����X�Y�K]^��ˌ��[����]���]��\��H����]^����[��\��H����[�[YH���Y\[��[����[����[����[��\��H����]Yȏ���ܘ�Z���	�ZY����ܙ���[����]����O��[�\��H����\�[[��ȏ��O�H�Y�H�΋������[Z����H�\��]H�؛[�Ȉ�[H����[�\�������[Z����O�O��O��O�H�Y�H�΋��\��YK�]��\��]H�؛[�Ȉ�[H����[�\���\��YK�]��O��O��O�H�Y�H�΋�ܛؚ[�[�[�ً���H�\��]H�؛[�Ȉ�[H����[�\����ؚ[�[�[�ً���O�O��O���[��]��\��H����\�X��H�����N�����Y\[�	�ZY����ܙS�Y\�[��]���ٛ��\�����ܚ\���ۜ�؜�\��\�H�]�[�\��X�[ۓ؜�\��\�
+[��Y\�HO�[��Y\˙�ܑXX�
+HO�Y�
+K�\�[�\��X�[��HK�\��]��\��\��Y
+	ݚ\�X�I�N؜�\��\��[�؜�\��JK�\��]
+NB�JNK��\����HJN���[Y[��]Y\�T�[X�ܐ[
+	˙�YK]\	�K��ܑXX�
+[O�؜�\��\��؜�\��J[
+JN��ܚ\��؛�O���[�
